@@ -13,33 +13,7 @@
 </head>
 <body>
 
-    <!-- Facebook -->
-    <!-- Load Facebook SDK for JavaScript -->
-    <div id="fb-root"></div>
-    <script>
-      window.fbAsyncInit = function() {
-        FB.init({
-          xfbml            : true,
-          version          : 'v9.0'
-        });
-      };
-
-      (function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
-
-    <!-- Your Chat Plugin code -->
-    <div class="fb-customerchat"
-      attribution=setup_tool
-      page_id="115244583512542"
-logged_in_greeting="Hey! How can we help you?"
-logged_out_greeting="Hey! How can we help you?">
-    </div>
-    <!-- facebook end -->
+    
     <header>
         <div class="container flex">
             <div class="logo"><img src="images/Gigabo logo.png" width="100px" alt="Gigabo"></div>
@@ -77,7 +51,7 @@ logged_out_greeting="Hey! How can we help you?">
             <div class="home-text xyz-in">
                 <h1 class="xl my-1">Welcome to <br><span class="gigabo">GIGABO</span></h1>
                 <p class="m text-2">Gadget Shop</p>
-                <a href="https://m.me/cctvcamerastore1" class="btn" target="_blank">Contact Us</a>
+                <a href="#" class="btn" target="_blank">Contact Us</a>
             </div>
             <div class="home-design p-2">
                 <img src="images/design-1.svg" alt="">
@@ -142,7 +116,7 @@ logged_out_greeting="Hey! How can we help you?">
           </div>
           <div class="container">
             <div class="main-shop py-1 my-4 text-center">
-                <h4><i class="fas fa-paperclip"></i> To buy our products online visit our main shop <a href="https://computerbazarctg.com" target="_blank" class="main-shop-link">Computer Bazar</a></h4>
+                <h4><i class="fas fa-paperclip"></i> To buy our products online visit our main shop <a href="#" target="_blank" class="main-shop-link">Computer Bazar</a></h4>
             </div>
           </div>
     </section>
@@ -181,21 +155,21 @@ logged_out_greeting="Hey! How can we help you?">
                     <i class="fas fa-phone"></i>
                     <div>
                         <h3 class="">Phone</h3>
-                        <p class="lead">01819615283</p>
+                        <p class="lead">018xxxxxxxx</p>
                     </div>
                 </div>
                 <div class="s-contact flex">
                     <i class="fas fa-map-marker-alt"></i>
                     <div>
                         <h3 class="">Address</h3>
-                        <p class="lead">Chakbazar Gulzar Tower, <br> Chittagong, Bangladesh</p>
+                        <p class="lead"> Chittagong, <br>Bangladesh</p>
                     </div>
                 </div>
                 <div class="s-contact flex">
                     <i class="fas fa-users"></i>
                     <div>
                         <h3 class="">Social media</h3>
-                        <a href="https://www.facebook.com/cctvcamerastore1" class="lead"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="lead"><i class="fab fa-facebook-f"></i></a>
                     </div>
                 </div>
             </div>
@@ -231,14 +205,21 @@ logged_out_greeting="Hey! How can we help you?">
                 <h3 class="my-1">Email</h3>
                 <p class="lead">support@gigaboshop.com</p>
                 <h3 class="my-1">Social media</h3>
-                <a href="https://www.facebook.com/cctvcamerastore1" class="lead"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="lead"><i class="fab fa-facebook-f"></i></a>
             </div>
         </div>
         <div class="container">
             <div class="copy-write text-center">
-                <p class="">Copy write &copy; 2021 GIGABO || Developed by <a href="https://farhan360.cf">Farhan</a></p>
+                <p class="">Copywrite &copy; <span id="year"></span> GIGABO || Developed by <a href="#">Farhan</a></p>
             </div>
         </div>
     </footer>
+
+
+    <script>
+        const date = document.querySelector("#year");
+
+        date.innerText = new Date().getFullYear();
+    </script>
 </body>
 </html>
