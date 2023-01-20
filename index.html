@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utilities.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="shortcut icon" href="images/Gigabo logo.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="keywords" content="farhan, gigabo, html & css site">
+    <meta name="description" content="A awesome business website design by Farhan">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIGABO</title>
+</head>
+<body>
+
+    <!-- Facebook -->
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v9.0'
+        });
+      };
+
+      (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <!-- Your Chat Plugin code -->
+    <div class="fb-customerchat"
+      attribution=setup_tool
+      page_id="115244583512542"
+logged_in_greeting="Hey! How can we help you?"
+logged_out_greeting="Hey! How can we help you?">
+    </div>
+    <!-- facebook end -->
+    <header>
+        <div class="container flex">
+            <div class="logo"><img src="images/Gigabo logo.png" width="100px" alt="Gigabo"></div>
+            <nav>
+                <ul class="desktop-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about-us">About Us</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- toggle -->
+        <div class="toggle">
+          <input type="checkbox" id="click" style="display: none;"/>
+          <label for="click" class="click-icon">
+             <div class="spiner top"></div>
+             <div class="spiner middle"></div>
+             <div class="spiner bottom"></div>
+          </label>
+          <div class="side-bar-menu"> 
+             <ul class="menu"> 
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about-us">About Us</a></li>
+              <li><a href="#products">Products</a></li>
+              <li><a href="#contact">Contact</a></li>
+          </div>
+        </div>
+    </header>
+
+    <!-- Intro -->
+    <section class="home p-1" id="home">
+        <div class="container grid" xyz="fade down-5 rotate-left-50% stagger-5">
+            <div class="home-text xyz-in">
+                <h1 class="xl my-1">Welcome to <br><span class="gigabo">GIGABO</span></h1>
+                <p class="m text-2">Gadget Shop</p>
+                <a href="https://m.me/cctvcamerastore1" class="btn" target="_blank">Contact Us</a>
+            </div>
+            <div class="home-design p-2">
+                <img src="images/design-1.svg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- --About-- -->
+    <section class="about-us py-1 my-1" id="about-us">
+        <h2 class="section-title">What we do</h2>
+        <div class="container grid" >
+            <div class="about-col about-img">
+                <img src="images/gigabo img.jpg" alt="About - GIGABO">
+            </div>
+            <div class="about-col about-text">
+                <p class="">Welcome to our site. Gigabo is a company that provides high quality cctv-accessories, cctv-package,
+                     wifi-camera. Gigabo shop was created in 2020 by Computer Bazar. Our specialty is that we deliver products at a fair price,
+                      because we believe in honesty. We started this business when we see that people are more interested in our cctv-accessories
+                       then we take a separate shop as 'Gigabo' for cctv-accessories in addition to Computer Bazar. Our dream is to make this industry bigger. 
+                       For that we need your help.
+                       <br>
+                    Thanks.</p>
+            </div>
+        </div>
+    </section>
+
+    <!----products---->
+    <section class="product my-1 py-2" id="products">
+        <h2 class="section-title">Our latest products</h2>
+        <div class="container grid grid-4">
+            <div class="s-pro s-pro-1">
+                <img src="images/pro-1.jpg" alt="">
+            </div>
+            <div class="s-pro s-pro-2">
+                <img src="images/pro-2.jpg" alt="">
+            </div>
+            <div class="s-pro s-pro-3">
+                <img src="images/pro-3.jpg" alt="">
+            </div>
+            <div class="s-pro s-pro-4">
+                <img src="images/pro-4.jpg" alt="">
+            </div>
+            <div class="s-pro s-pro-5">
+                <img src="images/pro-5.jpg" alt="">
+            </div>
+            <div class="s-pro s-pro-6">
+                <img src="images/pro-6.jpg" alt="">
+            </div>
+            <div class="s-pro s-pro-7">
+                <img src="images/pro-7.jpg" alt="">
+            </div>
+            <div class="s-pro s-pro-8">
+                <img src="images/pro-8.jpg" alt="">
+            </div>
+            <div class="s-pro s-pro-9">
+                <img src="images/pro-9.jpg" alt="">
+            </div>
+            <div class="s-pro s-pro-10">
+                <img src="images/pro-10.jpg" alt="">
+            </div>
+
+          </div>
+          <div class="container">
+            <div class="main-shop py-1 my-4 text-center">
+                <h4><i class="fas fa-paperclip"></i> To buy our products online visit our main shop <a href="https://computerbazarctg.com" target="_blank" class="main-shop-link">Computer Bazar</a></h4>
+            </div>
+          </div>
+    </section>
+
+
+    <!-- NEWSLETTER -->
+    <!-- <section class="newsletter py-2" id="newsletter">
+        <div class="container">
+            <div class="form-head text-center">
+                <h2 class="section-title">Newsletter</h2>
+                <p class="lead">Subscribe to our Newsletter, so then we can send you our latest update of our product.</p>
+            </div>
+            <div class="container flex">
+                <div class="form-wrapper">
+                    <form class="flex" name="newsletter" method="POST" data-netlify="true">
+                       
+                        <input type="email" name="email" class="form-email" placeholder="Email" required>
+                        <input type="submit" class="form-btn" value="Subscribe">
+                    </form>
+                </div>
+            </div>
+        </section> -->
+    
+        <!-- contact -->
+        <section class="contact py-2" id="contact">
+            <h2 class="section-title">Get in touch</h2>
+            <div class="container grid grid-2">
+                <div class="s-contact flex">
+                    <i class="far fa-envelope-open"></i>
+                    <div>
+                        <h3 class="">Email</h3>
+                        <p class="lead">support@gigaboshop.com</p>
+                    </div>
+                </div>
+                <div class="s-contact flex">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <h3 class="">Phone</h3>
+                        <p class="lead">01819615283</p>
+                    </div>
+                </div>
+                <div class="s-contact flex">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h3 class="">Address</h3>
+                        <p class="lead">Chakbazar Gulzar Tower, <br> Chittagong, Bangladesh</p>
+                    </div>
+                </div>
+                <div class="s-contact flex">
+                    <i class="fas fa-users"></i>
+                    <div>
+                        <h3 class="">Social media</h3>
+                        <a href="https://www.facebook.com/cctvcamerastore1" class="lead"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="main-shop main-shop-2 py-1 my-4 text-center">
+                <h4><i class="fas fa-paperclip"></i> If you want to buy our product physically you can come to our shop by following address. In following address you can find our GIGABO shop and also our main shop Computer Bazar.</h4>
+            </div>
+          </div>
+
+    </section>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container py-2 grid grid-3">
+            <div class="footer-logo footer-col">
+                <img src="images/Gigabo logo.png" alt="">
+            </div>
+            <div class="footer-col">
+                <h3 class="my-1">Quick links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about-us">About Us</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <!-- <li><a href="#newsletter">Newsletter</a></li> -->
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3 class="my-1">Address</h3>
+                <p class="lead">Chakbazar Gulzar Tower, <br> Chittagong, Bangladesh</p>
+                <h3 class="my-1">Email</h3>
+                <p class="lead">support@gigaboshop.com</p>
+                <h3 class="my-1">Social media</h3>
+                <a href="https://www.facebook.com/cctvcamerastore1" class="lead"><i class="fab fa-facebook-f"></i></a>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copy-write text-center">
+                <p class="">Copy write &copy; 2021 GIGABO || Developed by <a href="https://farhan360.cf">Farhan</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
